@@ -1,55 +1,52 @@
 # STIWK2124-A1-Group5
 # Accessible Reading List (ARL) — Backend
 
+## Course Information
+
+Course: STIWK2124 Web Engineering  
+Semester: A252 – Feb 2025/2026  
+Assignment: Assignment 1 — CLO2: Build Backend  
+Lecturer: Dr Munya Saleh Saeed Ba Matraf
+
+---
+
 ## Project Overview
 
-This project is the backend for the Accessible Reading List (ARL) system.
+This project is the backend for the **Accessible Reading List (ARL)** web application.
 It provides REST API services to manage books including create, read, update, delete, search, and pagination.
 
 ---
 
 ## Technologies Used
 
-* Spring Boot
+* Java (Spring Boot)
 * Spring Data JPA
 * MySQL
 * Maven
-* GitHub
+* Git & GitHub
 
 ---
 
-## Setup Instructions
+## Database Setup
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/NurJuwana/STIWK2124-A1-Group5.git
-```
-
----
-
-### 2. Open the project
-
-Open the project using:
-
-* VS Code
-* IntelliJ IDEA
-
----
-
-### 3. Setup MySQL Database
-
-Create database:
+1. Open MySQL
+2. Create database:
 
 ```sql
 CREATE DATABASE arl_db;
 ```
 
----
+3. Create user table (basic example):
 
-### 4. Configure application.properties
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    password VARCHAR(100)
+);
+```
 
-Update your database credentials:
+4. Update `application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/arl_db
@@ -60,54 +57,79 @@ spring.jpa.hibernate.ddl-auto=update
 
 ---
 
-### 5. Run the Application
+## How to Run the Project
 
-Run the Spring Boot application.
+1. Clone the repository:
 
-Server will start at:
-http://localhost:8080
-
----
-
-## 🔗 API Endpoints
-
-### Get all books (Pagination)
-
-GET /api/books?page=0&size=5
-
-### Search books
-
-GET /api/books?q=keyword
-
-### Add book
-
-POST /api/books
-
-### Update book
-
-PUT /api/books/{id}
-
-### Delete book
-
-DELETE /api/books/{id}
-
----
-
-## Example Request (Add Book)
-
-```json
-{
-  "title": "Sample Book",
-  "author": "Ali",
-  "category": "Education",
-  "description": "This is a sample book"
-}
+```bash
+git clone https://github.com/NurJuwana/STIWK2124-A1-Group5.git
 ```
+
+2. Open in VS Code / IntelliJ
+
+3. Run the Spring Boot application
+
+4. Server will start at:
+
+```
+http://localhost:8080
+```
+
+---
+
+## API Endpoints
+
+### Get All Books (Pagination)
+
+```
+GET /api/books?page=0&size=5
+```
+
+### Search Books
+
+```
+GET /api/books?q=keyword
+```
+
+### Add Book
+
+```
+POST /api/books
+```
+
+### Update Book
+
+```
+PUT /api/books/{id}
+```
+
+### Delete Book
+
+```
+DELETE /api/books/{id}
+```
+
+---
+
+## Demo Video
+
+📎 (Insert your recording link here)
+
+---
+
+## Features Implemented
+
+* CRUD operations
+* Pagination
+* Search functionality
+* Input validation
+* RESTful API design
 
 ---
 
 ## Repository
 
+GitHub Link:
 https://github.com/NurJuwana/STIWK2124-A1-Group5
 
 ---
@@ -115,4 +137,6 @@ https://github.com/NurJuwana/STIWK2124-A1-Group5
 ## Notes
 
 * Make sure MySQL is running before starting the project
-* Update database username and password correctly
+* Adjust database credentials if needed
+
+---
