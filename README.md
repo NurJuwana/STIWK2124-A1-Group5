@@ -1,14 +1,14 @@
 # STIWK2124-A1-Group5
-# 📚 Accessible Reading List (ARL) — Backend
+# Accessible Reading List (ARL) — Backend
 
-## 📌 Project Overview
+## Project Overview
 
 This project is the backend for the Accessible Reading List (ARL) system.
 It provides REST API services to manage books including create, read, update, delete, search, and pagination.
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 * Spring Boot
 * Spring Data JPA
@@ -18,7 +18,7 @@ It provides REST API services to manage books including create, read, update, de
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repository
 
@@ -71,29 +71,29 @@ http://localhost:8080
 
 ## 🔗 API Endpoints
 
-### 📘 Get all books (Pagination)
+### Get all books (Pagination)
 
 GET /api/books?page=0&size=5
 
-### 🔍 Search books
+### Search books
 
 GET /api/books?q=keyword
 
-### ➕ Add book
+### Add book
 
 POST /api/books
 
-### ✏️ Update book
+### Update book
 
 PUT /api/books/{id}
 
-### ❌ Delete book
+### Delete book
 
 DELETE /api/books/{id}
 
 ---
 
-## 🧾 Example Request (Add Book)
+## Example Request (Add Book)
 
 ```json
 {
@@ -106,13 +106,13 @@ DELETE /api/books/{id}
 
 ---
 
-## 📂 Repository
+## Repository
 
 https://github.com/NurJuwana/STIWK2124-A1-Group5
 
 ---
 
-## 📝 Notes
+## Notes
 
 * Make sure MySQL is running before starting the project
 * Update database username and password correctly
