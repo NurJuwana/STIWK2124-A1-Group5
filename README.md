@@ -36,13 +36,15 @@ It provides REST API services to manage books including create, read, update, de
 CREATE DATABASE arl_db;
 ```
 
-3. Create user table (basic example):
+3. Create book table (basic example):
 
 ```sql
-CREATE TABLE users (
+CREATE TABLE books (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50),
-    password VARCHAR(100)
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    category VARCHAR(100),
+    description TEXT
 );
 ```
 
