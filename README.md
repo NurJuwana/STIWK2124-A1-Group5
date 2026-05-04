@@ -51,7 +51,6 @@ CREATE TABLE users (
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/arl_db
 spring.datasource.username=root
-spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 ```
 
