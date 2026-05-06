@@ -10,3 +10,5 @@ CREATE TABLE books (
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+SELECT * FROM books;
