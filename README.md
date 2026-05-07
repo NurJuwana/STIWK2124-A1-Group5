@@ -114,7 +114,7 @@ DELETE /api/books/{id}
 
 ## Demo Video
 
-📎 (Insert your recording link here)
+📎 https://youtu.be/HykeuqUZ2gU?si=waKp2Lk_RHqu4lVI
 
 ---
 
